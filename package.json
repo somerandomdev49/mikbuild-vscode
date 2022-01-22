@@ -1,0 +1,25 @@
+{
+    "name": "mikbuild",
+    "displayName": "MikBuild Language Support",
+    "description": "Provides support for the MikBuild language files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mikbuild",
+            "aliases": ["MikBuild", "mikbuild"],
+            "extensions": [".mb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mikbuild",
+            "scopeName": "source.mb",
+            "path": "./syntaxes/mikbuild.tmLanguage.json"
+        }]
+    }
+}

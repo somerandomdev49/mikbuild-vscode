@@ -1,0 +1,64 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MikBuild",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#other"
+		},
+		{
+			"include": "#operators"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.mikbuild",
+					"match": "\\b(if|each|in|end|else)\\b"
+				},
+				{
+					"name": "keyword.mikbuild",
+					"match": "\\b(rule|build)\\b"
+				}
+			]
+		},
+		"other": {
+			"patterns": [
+				{
+					"name": "comment.line.mikbuild",
+					"match": "#.*"
+				},
+				{
+					"name": "variable.mikbuild",
+					"match": "\\$(\\$|[a-zA-Z0-9\\-_]+)"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.mikbuild",
+					"match": "(?:(=|->))"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.single.mikbuild",
+			"begin": "`",
+			"end": "`",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mikbuild",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.mb"
+}

@@ -2,7 +2,9 @@
     "name": "mikbuild",
     "displayName": "MikBuild Language Support",
     "description": "Provides support for the MikBuild language files",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "repository": "https://github.com/somerandomdev49/mikbuild-vscode",
+    "publisher": "somerandomdev49",
     "engines": {
         "vscode": "^1.63.0"
     },

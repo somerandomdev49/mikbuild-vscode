@@ -24,7 +24,7 @@
 				},
 				{
 					"name": "keyword.mikbuild",
-					"match": "\\b(rule|build)\\b"
+					"match": "^(rule)\\b"
 				}
 			]
 		},
